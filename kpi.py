@@ -35,7 +35,7 @@ with col3:
 
      
 
-conclusion = "Are you spending time and money on people interested in your marketing content and not enough on people who are actively interested in purchasing your product or service? Sometime we are interested in a businesses product, and will sign up for the newsletter but we may never intend (or could never afford) to buy the product." 
+conclusion = "It's easy to be unaware that you are spending time and money on people interested in your marketing content and not enough on people who are actively interested in purchasing your product or service. Sometimes we are interested in a businesses product, and will sign up for the newsletter but we may never intend (or could never afford) to buy the product." 
 conclusion2 = "By focussing on SQL lead generation, and allocating your resources to SQLs, you can decreases you CAC which will increase your profit per customer"  
 st.markdown(f"<h3 style='text-align: left; color: black;'>{conclusion}</h3>", unsafe_allow_html=True)
 st.markdown(f"<h3 style='text-align: left; color: black;'>{conclusion2}</h3>", unsafe_allow_html=True)
