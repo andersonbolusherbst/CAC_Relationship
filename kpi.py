@@ -66,6 +66,8 @@ st.write("---")
 st.subheader("Consider all of the costs related to Customer Aquisition. An example can be seen above")
 
 st.image("CAC COSTS.png")
+
+st.subheader("Now consider the effect of these costs being allocated to people only interested in marketing content")
     
 
 st.write("---")
@@ -96,11 +98,13 @@ st.subheader(" ✔︎ Assess sales process")
 st.subheader(" ✔︎ Focus efforts on SQL leads")
 st.subheader(" ✔︎ Build the Brand")
 st.subheader(" ✔︎ Improve Sales Funnel")
+st.subheader(" ✔︎ Increase Organice Traffic")
+
 
 st.write("---")
 
 st.markdown(" # Inversion Process ")
-st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength")
+st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength. By having a strong brand, customers with active interest in your product will come to you. Meaning that investing in your brand now brings you cheap, even free Sales Qualified customers in the long run")
     
 Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
 st.markdown(f"<h2 style='text-align: left; color: black;'>{Relationship}</h2>", unsafe_allow_html=True)
@@ -108,7 +112,7 @@ st.markdown(f"<h2 style='text-align: left; color: black;'>{Relationship}</h2>", 
 CAC_selection = st.slider('CAC % Decrease: ',
                                 min_value= 0,
                                 max_value= 10)
-RevenueperCustomer = 50000
+RevenueperCustomer = 500000
 CACMARGIN = CAC_selection/RevenueperCustomer  
 GPAFTERCAC = 1-CACMARGIN 
 Write = "Gross Profit After Customer Aquisition Cost Decrease = "
