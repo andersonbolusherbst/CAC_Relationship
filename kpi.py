@@ -84,9 +84,7 @@ st.subheader("")
 st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
 st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
 
-st.markdown("$$
-            CAC formula = Total Costs to Aqcuire Customers / Number of Customers
-            $$")
+st.markdown("__CAC formula = Total Costs to Aqcuire Customers / Number of Customers__")
 
 st.markdown(" ## Gross Profit after CAC")
 st.image("GPAfterCAC.png")
