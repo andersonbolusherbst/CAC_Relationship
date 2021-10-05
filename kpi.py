@@ -16,6 +16,8 @@ st.markdown(" # Overview of Inversion Customer Aquisition Costs Relationship")
 st.image("fb-customer-acquisition-cost.png")
 subheader = "If Marketing Activities and Lead Generation tactics are not well thought out, they can drive up the Cost of Customer Acquisition (CAC) and erode your profit margin. Are you spending money and time unnecessarily on the wrong people? It's important to distinguish between:"  
 st.markdown(f"<h2 style='text-align: center; color: black;'>{subheader}</h1>", unsafe_allow_html=True)
+st.write("")
+st.write("")
 
 col1, col2,col3= st.columns(3)
 subsub = "Customers attracted by MARKETING CONTENT (Newsletters, Promotions, Seminars etc)"
@@ -31,7 +33,6 @@ with col3:
     st.markdown(f"<h4 style='text-align: right; color: black;'>{subsub2}</h2>", unsafe_allow_html=True)
     
 
-st.image("MQL-vs-SQL.jpeg")
      
 
 conclusion = "Are you spending time and money on people interested in your marketing content and not enough on people who are actively interested in purchasing your product or service? Sometime we are interested in a businesses product, and will sign up for the newsletter but we may never intend (or could never afford) to buy the product." 
