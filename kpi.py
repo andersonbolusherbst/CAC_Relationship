@@ -14,7 +14,7 @@ st.set_page_config(
 
 st.markdown(" # Overview of Inversion Customer Aquisition Costs Relationship")
 st.image("fb-customer-acquisition-cost.png")
-subheader = "Marketing Activities and Lead Generation can become inefficient if we fail to distinguish between these two important factors:"  
+subheader = "If Marketing Activities and Lead Generation tactics are not well thought out, they can drive up the Cost of Customer Acquisition (CAC) and erode you profit margin. Are you spending money and time unnecessarily on the wrong people? It's important to distinguish between:"  
 st.markdown(f"<h1 style='text-align: center; color: black;'>{subheader}</h1>", unsafe_allow_html=True)
 
 col1, col2,col3= st.columns(3)
