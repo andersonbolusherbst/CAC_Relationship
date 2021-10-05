@@ -36,7 +36,7 @@ with col3:
      
 
 conclusion = "It's easy to be unaware that you are spending time and money on people interested in your marketing content and not enough on people who are actively interested in purchasing your product or service. Sometimes we are interested in a businesses product, and will sign up for the newsletter but we may never intend (or could never afford) to buy the product." 
-conclusion2 = "By focussing on SQL lead generation, and allocating your resources to SQLs, you can decreases you CAC which will increase your profit per customer"  
+conclusion2 = "By focusing on SQL lead generation, and allocating your resources to SQLs, you can decreases your CAC which will increase your profit per customer"  
 st.markdown(f"<h3 style='text-align: left; color: black;'>{conclusion}</h3>", unsafe_allow_html=True)
 st.markdown(f"<h3 style='text-align: left; color: black;'>{conclusion2}</h3>", unsafe_allow_html=True)
 st.write("")
@@ -67,7 +67,7 @@ st.subheader("Consider all of the costs related to Customer Aquisition. An examp
 
 st.image("CAC COSTS.png")
 
-st.subheader("Now consider the effect of these costs being allocated to people only interested in marketing content")
+st.subheader("Now consider the effect of these costs being allocated to people only interested in marketing content. Sales people may waste time following up on the wrong opportunities")
     
 
 st.write("---")
@@ -100,7 +100,7 @@ st.subheader(" ✔︎ Assess sales process")
 st.subheader(" ✔︎ Focus efforts on SQL leads")
 st.subheader(" ✔︎ Build the Brand")
 st.subheader(" ✔︎ Improve Sales Funnel")
-st.subheader(" ✔︎ Increase Organice Traffic")
+st.subheader(" ✔︎ Increase Organic Traffic")
 
 
 st.write("---")
