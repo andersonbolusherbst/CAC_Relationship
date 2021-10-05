@@ -87,6 +87,8 @@ st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", u
 st.markdown("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
 st.markdown("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
 st.markdown("_Gross Profit After CAC Margin = 1 - CAC Margin_")
+st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin")
+
 
                             
 st.write("---")                               
@@ -103,7 +105,7 @@ st.subheader(" ✔︎ Increase Organice Traffic")
 
 st.write("---")
 
-st.markdown(" # Inversion Process ")
+st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1> ")
 st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength. By having a strong brand, customers with active interest in your product will come to you. Meaning that investing in your brand now brings you cheap, even free Sales Qualified customers in the long run")
     
 Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
