@@ -76,18 +76,18 @@ WHY = "Why is CAC important?"
 CALCULATION = "CAC Margin Calculation"
 Method = "Method for CAC Calculation"
 
-st.markdown(f"<h1 style='text-align: center; color: black;'>{WHY}</h1>", unsafe_allow_html=True)
-st.subheader(" ✔︎ Enables your business to asses which segments of your customer base are most efficient and profitable")
-st.subheader(" ✔︎ Helps to drive profit margins as you scale")
-st.subheader(" ✔︎ Powerful metric to calculate the resulting ROI from an Investor standpoint")
-st.subheader("")
-st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
+#st.markdown(f"<h1 style='text-align: center; color: black;'>{WHY}</h1>", unsafe_allow_html=True)
+#st.subheader(" ✔︎ Enables your business to asses which segments of your customer base are most efficient and profitable")
+#st.subheader(" ✔︎ Helps to drive profit margins as you scale")
+#st.subheader(" ✔︎ Powerful metric to calculate the resulting ROI from an Investor standpoint")
+#st.subheader("")
+#st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
 st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
 
 st.markdown("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
 st.markdown("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
 st.markdown("_Gross Profit After CAC Margin = 1 - CAC Margin_")
-st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin")
+st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin. You can explore the effects of changes in CAC after the next section")
 
 
                             
@@ -105,7 +105,7 @@ st.subheader(" ✔︎ Increase Organice Traffic")
 
 st.write("---")
 
-st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1> ")
+st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1>", unsafe_allow_html=True)
 st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength. By having a strong brand, customers with active interest in your product will come to you. Meaning that investing in your brand now brings you cheap, even free Sales Qualified customers in the long run")
     
 Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
@@ -133,7 +133,7 @@ st.write("")
 InversionCost = 42000
 IncrementalGain = GPAFTERCAC
 ReturnONInversion = IncrementalGain/InversionCost
-WriteUP = "Return on Paying for Inversions Service = "
+WriteUP = "Return on Paying for Inversion's Service = "
 
 col13,col14 = st.columns(2)
 with col13: 
