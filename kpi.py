@@ -110,8 +110,8 @@ st.subheader("Inversion aims to decrease CAC through its powerful Brand Process 
 Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
 st.markdown(f"<h3 style='text-align: center; color: black;'>{Relationship}</h3>", unsafe_allow_html=True)
 
-st.subheader("Lets put these ratios into action!")
-st.write("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
+st.header("Lets put these ratios into action!")
+st.subheader("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
 
 TCA = 160000
 NumCust = 11
