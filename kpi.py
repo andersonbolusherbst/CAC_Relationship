@@ -163,7 +163,7 @@ GPACM = 1-CACMAR
 st.write("Customer Aquisition Cost: ", CAC)
 st.write("Customer Aquisition Cost MARGIN", CACMAR)
 st.write("Gross Profit after CAC Margin", GPACM)
-st.write("Initial Return on Inversion", ROI, )
+#st.write("Initial Return on Inversion", ROI, )
     
         
 st.title("Return on Inversion")
