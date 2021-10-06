@@ -84,12 +84,12 @@ Method = "Method for CAC Calculation"
 #st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
 st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
 
-st.markdown("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
-st.markdown("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
-st.markdown("_Gross Profit After CAC Margin = 1 - CAC Margin_")
+st.subheader("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
+st.subheader("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
+st.subheader("_Gross Profit After CAC Margin = 1 - CAC Margin_")
 st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin. You can explore the effects of changes in CAC after the next section")
 
-
+st.image("MockCAC.png")
                             
 st.write("---")                               
 
