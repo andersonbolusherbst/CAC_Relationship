@@ -143,7 +143,6 @@ st.subheader("Inversion aims to decrease CAC through its powerful Brand Process 
 Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
 st.markdown(f"<h3 style='text-align: center; color: black;'>{Relationship}</h3>", unsafe_allow_html=True)
 
-st.title("Return on Inversion")
 st.subheader("Lets put these ratios into action!")
 st.write("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
 
@@ -161,13 +160,13 @@ IncrementalGain = (340000) - (Rev * (1-CACMAR))
 ROI = IncrementalGain/InversionCost
 
 
-st.subheader("Customer Aquisition Cost: ", CAC)
-st.subheader("Customer Aquisition Cost MARGIN", CACMAR)
-st.subheader("Gross Profit after CAC Margin", GPACM)
-st.subheader("Initial Return on Inversion", ROI, )
+st.write("Customer Aquisition Cost: ", CAC)
+st.write("Customer Aquisition Cost MARGIN", CACMAR)
+st.write("Gross Profit after CAC Margin", GPACM)
+st.write("Initial Return on Inversion", ROI, )
     
         
-st.title("CAC Selection Slider")
+st.title("Return on Inversion")
 st.subheader("Adjust CAC Margin here")
 CAC_selection = st.slider('CAC % Scenario: ',
                                 min_value= -0.05,
@@ -179,10 +178,10 @@ GPACM2 = 1-NewCACMAR
 NewIncrementalGain = (340000) - (Rev * (1-NewCACMAR))
 NewROI = NewIncrementalGain/InversionCost
 
-st.subheader("Customer Aquisition Cost: ", CAC)
-st.subheader("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
-st.subheader("NEW Gross Profit after CAC Margin Change", GPACM2)
-st.subheader("Initial Return on Inversion", NewROI)
+st.write("Customer Aquisition Cost: ", CAC)
+st.write("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
+st.write("NEW Gross Profit after CAC Margin Change", GPACM2)
+st.write("Initial Return on Inversion", NewROI)
     
 st.write("---") 
 
