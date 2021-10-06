@@ -171,7 +171,7 @@ st.title("CAC Selection Slider")
 st.subheader("Adjust CAC Margin here")
 CAC_selection = st.slider('CAC % Scenario: ',
                                 min_value= -0.05,
-                                max_value= 0.05, value = 0, steps = 0.01)
+                                max_value= 0.05, value = 0, step = 0.01)
 st.write("Chosen CAC MARGIN:", CAC_selection)
 
 NewCACMAR = CACMAR*CAC_selection
