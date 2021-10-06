@@ -155,9 +155,9 @@ CACMAR = TCA/Rev
 
 GPACM = 1-CACMAR
 
-InversionCost = 42000
-IncrementalGain = (340000) - (Rev * (1-CACMAR))
-ROI = IncrementalGain/InversionCost
+#InversionCost = 42000
+#IncrementalGain = (340000) - (Rev * (1-CACMAR))
+#ROI = IncrementalGain/InversionCost
 
 
 st.write("Customer Aquisition Cost: ", CAC)
@@ -173,7 +173,7 @@ CAC_selection = st.slider('CAC % Scenario: ',
                                 max_value= 0.05, value = 0.0, step = 0.01)
 st.write("Chosen CAC MARGIN:", CAC_selection)
 
-NewCACMAR = CACMAR*CAC_selection
+NewCACMAR = CACMAR*(1+CAC_selection)
 GPACM2 = 1-NewCACMAR
 NewIncrementalGain = (340000) - (Rev * (1-NewCACMAR))
 NewROI = NewIncrementalGain/InversionCost
