@@ -154,16 +154,16 @@ InversionCost = 42000
 CAC = TCA/NumCust
 CACMAR = TCA/Rev
 
-GPACM = 1-CACMAR
+GPACAC = 1-CACMAR
 
-#InversionCost = 42000
-#IncrementalGain = (340000) - (Rev * (1-CACMAR))
-#ROI = IncrementalGain/InversionCost
+InversionCost = 42000
+IncrementalGain = 340000 - (Rev * GPACAC)
+ROI = IncrementalGain/InversionCost
 
 
 st.write("Customer Aquisition Cost: ", CAC)
 st.write("Customer Aquisition Cost MARGIN", CACMAR)
-st.write("Gross Profit after CAC Margin", GPACM)
+st.write("Gross Profit after CAC Margin", GPACAC)
 #st.write("Initial Return on Inversion", ROI, )
     
         
@@ -182,7 +182,7 @@ NewROI = NewIncrementalGain/InversionCost
 st.write("Customer Aquisition Cost: ", CAC)
 st.write("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
 st.write("NEW Gross Profit after CAC Margin Change", GPACM2)
-st.write("Initial Return on Inversion", NewROI)
+st.write("Return on Inversion after CAC Change", NewROI)
     
 st.write("---") 
 
