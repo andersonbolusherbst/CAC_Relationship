@@ -104,13 +104,6 @@ st.subheader(" ✔︎ Increase Organic Traffic")
 
 
 st.write("---")
-
-st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1>", unsafe_allow_html=True)
-st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength. By having a strong brand, customers with active interest in your product will come to you. Meaning that investing in your brand now brings you cheap, even free Sales Qualified customers in the long run")
-    
-Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
-st.markdown(f"<h2 style='text-align: left; color: black;'>{Relationship}</h2>", unsafe_allow_html=True)
-
 CAC_selection = st.slider('CAC % Decrease: ',
                                 min_value= 0,
                                 max_value= 10)
@@ -141,8 +134,15 @@ with col13:
 
 with col14: 
     st.markdown(f"<h2 style='text-align: left; color: green;'>{ReturnONInversion}</h2>", unsafe_allow_html=True)  
-    
+
+#### KPI Slider Section      
 st.write("----")
+st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1>", unsafe_allow_html=True)
+st.write("Inversion aims to decrease CAC through its powerful Brand Process and an emphasis on brand creation and strength. By having a strong brand, customers with active interest in your product will come to you. Meaning that investing in your brand now brings you cheap, even free Sales Qualified customers in the long run")
+    
+Relationship = "As CAC Margin ⬇︎ Gross Profit after CAC will ⬆︎. See for yourself below!"
+st.markdown(f"<h3 style='text-align: center; color: black;'>{Relationship}</h3>", unsafe_allow_html=True)
+
 st.title("Return on Inversion")
 st.subheader("Lets put these ratios into action!")
 st.write("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
@@ -184,7 +184,7 @@ st.write("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
 st.write("NEW Gross Profit after CAC Margin Change", GPACM2)
 st.write("Initial Return on Inversion", NewROI)
     
-#### KPI Slider Section    
+  
 
 
 
