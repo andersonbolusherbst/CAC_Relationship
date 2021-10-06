@@ -128,7 +128,7 @@ IncrementalGain = 340000 - (Rev * GPACAC)
 ROI = IncrementalGain/InversionCost
 
 
-st.write("Customer Aquisition Cost: ", round(CAC, 2))
+st.write("Customer Aquisition Cost: R", round(CAC, 2))
 st.write("Customer Aquisition Cost MARGIN", round(CACMAR*100,2), "%")
 st.write("Gross Profit after CAC Margin", round(GPACAC*100,2), "%")
 #st.write("Initial Return on Inversion", ROI, )
@@ -146,7 +146,7 @@ NewGPACAC = 1-NewCACMAR
 NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
 
-st.write("Customer Aquisition Cost: ", round(CAC,2))
+st.write("Customer Aquisition Cost: R", round(CAC,2))
 st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
 st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
 st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
