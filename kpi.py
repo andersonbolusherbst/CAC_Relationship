@@ -143,7 +143,7 @@ with col14:
     st.markdown(f"<h2 style='text-align: left; color: green;'>{ReturnONInversion}</h2>", unsafe_allow_html=True)  
     
 st.write("----")
-
+st.title("Return on Inversion")
 st.subheader("Lets put these ratios into action!")
 st.write("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
 
