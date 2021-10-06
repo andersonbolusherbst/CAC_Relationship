@@ -175,8 +175,8 @@ CAC_selection = st.slider('CAC % Scenario: ',
 st.write("Chosen CAC MARGIN:", CAC_selection)
 
 NewCACMAR = CACMAR*(1+CAC_selection)
-GPACM2 = 1-NewCACMAR
-NewIncrementalGain = (340000) - (Rev * (1-NewCACMAR))
+NewGPACAC = 1-NewCACMAR
+NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
 
 st.write("Customer Aquisition Cost: ", CAC)
