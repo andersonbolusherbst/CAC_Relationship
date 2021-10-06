@@ -150,6 +150,7 @@ Rev = 500000
 
 CAC = TCA/NumCust
 CACMAR = TCA/Rev
+
 GPACM = 1-CACMAR
 
 InversionCost = 42000
@@ -158,11 +159,17 @@ ROI = IncrementalGain/InversionCost
 
 
 st.write(CAC, "This is CAC")
-st.write(CACMAR, "This is CAC MARGIN")
+st.write(NewCACMAR, "This is the CAC MARGIN")
 st.write(GPACM, "This GP after CAC Margin")
 st.write(ROI, "This is Return on Inversion")
     
-    
+        
+st.title("CAC Selection Slider")
+st.subheader("Adjust CAC Margin here")
+CAC_selection = st.slider('CAC % Scenario: ',
+                                min_value= -5,
+                                max_value= 5, value = 0)
+st.write("Chosen CAC MARGIN:", CAC_selection)
     
 #### KPI Slider Section    
 
