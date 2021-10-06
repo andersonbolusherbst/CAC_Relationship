@@ -136,7 +136,7 @@ st.write("Gross Profit after CAC Margin", round(GPACAC*100,2), "%")
         
 st.title("Return on Inversion")
 st.subheader("Adjust CAC Margin here")
-CAC_selection = st.slider(min_value= -0.5,
+CAC_selection = st.slider("",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
 st.write("Chosen CAC MARGIN Change:", CAC_selection*10, "%")
 
