@@ -181,7 +181,7 @@ NewROI = NewIncrementalGain/InversionCost
 
 st.write("Customer Aquisition Cost: ", CAC)
 st.write("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
-st.write("NEW Gross Profit after CAC Margin Change", GPACM2)
+st.write("NEW Gross Profit after CAC Margin Change", NewGPACAC)
 st.write("Return on Inversion after CAC Change", NewROI)
     
 st.write("---") 
