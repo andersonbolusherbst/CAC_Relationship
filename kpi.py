@@ -159,7 +159,7 @@ ROI = IncrementalGain/InversionCost
 
 
 st.write(CAC, "This is CAC")
-st.write(NewCACMAR, "This is the CAC MARGIN")
+st.write(CACMAR, "This is the CAC MARGIN")
 st.write(GPACM, "This GP after CAC Margin")
 st.write(ROI, "This is Return on Inversion")
     
