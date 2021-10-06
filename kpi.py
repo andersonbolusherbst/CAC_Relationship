@@ -149,6 +149,7 @@ st.write("Below is the output of our different ratios before manipulating the CA
 TCA = 160000
 NumCust = 11
 Rev = 500000
+InversionCost = 42000
 
 CAC = TCA/NumCust
 CACMAR = TCA/Rev
