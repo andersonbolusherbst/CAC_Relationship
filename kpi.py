@@ -144,6 +144,9 @@ with col14:
     
 st.write("----")
 
+st.subheader("Lets put these ratios into action!")
+st.write("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
+
 TCA = 160000
 NumCust = 11
 Rev = 500000
@@ -158,18 +161,28 @@ IncrementalGain = (340000) - (Rev * (1-CACMAR))
 ROI = IncrementalGain/InversionCost
 
 
-st.write(CAC, "This is CAC")
-st.write(CACMAR, "This is the CAC MARGIN")
-st.write(GPACM, "This GP after CAC Margin")
-st.write(ROI, "This is Return on Inversion")
+st.subheader("Customer Aquisition Cost: ", CAC)
+st.write("Customer Aquisition Cost MARGIN", CACMAR)
+st.write("Gross Profit after CAC Margin", GPACM)
+st.write("Initial Return on Inversion", ROI, )
     
         
 st.title("CAC Selection Slider")
 st.subheader("Adjust CAC Margin here")
 CAC_selection = st.slider('CAC % Scenario: ',
-                                min_value= -5,
-                                max_value= 5, value = 0)
+                                min_value= -0.05,
+                                max_value= 0.05, value = 0, steps = 0.01)
 st.write("Chosen CAC MARGIN:", CAC_selection)
+
+NewCACMAR = CACMAR*CAC_selection
+GPACM2 = 1-NewCACMAR
+NewIncrementalGain = (340000) - (Rev * (1-NewCACMAR))
+NewROI = NewIncrementalGain/InversionCost
+
+st.subheader("Customer Aquisition Cost: ", CAC)
+st.write("NEW Customer Aquisition Cost MARGIN", NewCACMAR)
+st.write("NEW Gross Profit after CAC Margin Change", GPACM2)
+st.write("Initial Return on Inversion", NewROI)
     
 #### KPI Slider Section    
 
