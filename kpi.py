@@ -153,7 +153,7 @@ CACMAR = TCA/Rev
 GPACM = 1-CACMAR
 
 InversionCost = 42000
-IncrementalGain = (340000) - (Rev - (1-CACMAR))
+IncrementalGain = (340000) - (Rev * (1-CACMAR))
 ROI = IncrementalGain/InversionCost
 
 
