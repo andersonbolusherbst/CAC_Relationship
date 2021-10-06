@@ -102,39 +102,6 @@ st.subheader(" ✔︎ Build the Brand")
 st.subheader(" ✔︎ Improve Sales Funnel")
 st.subheader(" ✔︎ Increase Organic Traffic")
 
-
-st.write("---")
-CAC_selection = st.slider('CAC % Decrease: ',
-                                min_value= 0,
-                                max_value= 10)
-RevenueperCustomer = 500000
-CACMARGIN = CAC_selection/RevenueperCustomer  
-GPAFTERCAC = 1-CACMARGIN 
-Write = "Gross Profit After Customer Aquisition Cost Decrease = "
-
-col11,col12 = st.columns(2)
-
-with col11:
-    st.markdown(f"<h2 style='text-align: left; color: green;'>{Write}</h2>", unsafe_allow_html=True) 
-with col12:
-    st.markdown(f"<h2 style='text-align: left; color: green;'>{GPAFTERCAC}</h2>", unsafe_allow_html=True)
-st.write("")
-st.write("")
-st.image("Return on Inversion.png")
-st.write("")
-st.write("")
-InversionCost = 42000
-IncrementalGain = GPAFTERCAC
-ReturnONInversion = IncrementalGain/InversionCost
-WriteUP = "Return on Paying for Inversion's Service = "
-
-col13,col14 = st.columns(2)
-with col13: 
-    st.markdown(f"<h2 style='text-align: left; color: green;'>{WriteUP}</h2>", unsafe_allow_html=True)
-
-with col14: 
-    st.markdown(f"<h2 style='text-align: left; color: green;'>{ReturnONInversion}</h2>", unsafe_allow_html=True)  
-
 #### KPI Slider Section      
 st.write("----")
 st.markdown("<h1 style='text-align: center; color: black;'>Inversion Process</h1>", unsafe_allow_html=True)
@@ -149,7 +116,7 @@ st.write("Below is the output of our different ratios before manipulating the CA
 TCA = 160000
 NumCust = 11
 Rev = 500000
-InversionCost = 42000
+InversionCost = 73000
 
 CAC = TCA/NumCust
 CACMAR = TCA/Rev
