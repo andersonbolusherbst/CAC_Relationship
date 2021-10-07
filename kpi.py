@@ -84,7 +84,7 @@ Method = "Method for CAC Calculation"
 #st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
 st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin. You can explore the effects of changes in CAC after the next section")
 col1, col2 = st.columns(2)
- with col1:
+with col1:
     st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
     st.subheader("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
     st.subheader("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
