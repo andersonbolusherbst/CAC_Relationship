@@ -118,12 +118,12 @@ NewROI = NewIncrementalGain/InversionCost
 
 col11, col12, col13 = st.columns(3)
 
-with col11:
-    st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
-with col12:
-    st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
-with col13:
-    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain)
+    with col11:
+        st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
+    with col12:
+        st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
+    with col13:
+        st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain))
 
 st.write("---")                               
 
