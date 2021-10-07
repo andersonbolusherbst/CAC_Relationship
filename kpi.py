@@ -160,14 +160,34 @@ st.subheader("Below is the output of our different ratios before manipulating th
         
 st.title("Return on Inversion")
 st.subheader("Adjust CAC Margin Here: ")
+
 CAC_selection2 = st.slider("Slide for some magic!",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
 st.write("Chosen CAC MARGIN Change:", CAC_selection2*10, "%")
 
+TCA = 160000
+NumCust = 11
+Rev = 500000
+InversionCost = 73000
+
+CAC = TCA/NumCust
+CACMAR = TCA/Rev
+
+GPACAC = 1-CACMAR
+
+InversionCost = 42000
+IncrementalGain = 340000 - (Rev * GPACAC)
+ROI = IncrementalGain/InversionCost
+
+NewCACMAR = CACMAR*(1-CAC_selection2)
+NewGPACAC = 1-NewCACMAR
+NewIncrementalGain = 340000 - (Rev * NewGPACAC)
+NewROI = NewIncrementalGain/InversionCost
+
 col14, col15 = st.columns(2)
 
 with col14:
-    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain2))
+    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain))
 with col15:
     st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
 
