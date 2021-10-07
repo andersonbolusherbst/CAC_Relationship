@@ -28,7 +28,7 @@ with col1:
     st.markdown(f"<h4 style='text-align: left; color: black;'>{subsub}</h2>", unsafe_allow_html=True)
     
 with col2:
-     st.image("MQL-vs-SQL.jpeg")
+    st.image("MQL-vs-SQL.jpeg")
 with col3: 
     st.markdown(f"<h4 style='text-align: right; color: black;'>{subsub2}</h2>", unsafe_allow_html=True)
     
