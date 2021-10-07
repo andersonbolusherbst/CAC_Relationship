@@ -82,16 +82,48 @@ Method = "Method for CAC Calculation"
 #st.subheader(" ✔︎ Powerful metric to calculate the resulting ROI from an Investor standpoint")
 #st.subheader("")
 #st.markdown(f"<h1 style='text-align: center; color: black;'>{Method}</h1>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
+
+st.subheader("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
+st.subheader("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
+st.subheader("_Gross Profit After CAC Margin = 1 - CAC Margin_")
 st.subheader("The relationship of Customer Acquisition Cost with Profit can best be illustrated with the CAC margin. You can explore the effects of changes in CAC after the next section")
-col1, col2 = st.columns(2)
+
+st.image("MockCAC.png")
+
+##### New Layout
+st.subheader("Adjust CAC Margin here")
+CAC_selection1 = st.slider("",min_value= -0.5,
+                          max_value= 0.5, value = 0.0, step = 0.1)
+st.write("Chosen CAC MARGIN Change:", CAC_selection1*10, "%")
+
+TCA = 160000
+NumCust = 11
+Rev = 500000
+InversionCost = 73000
+
+CAC = TCA/NumCust
+CACMAR = TCA/Rev
+
+GPACAC = 1-CACMAR
+
+InversionCost = 42000
+IncrementalGain = 340000 - (Rev * GPACAC)
+ROI = IncrementalGain/InversionCost
+
+NewCACMAR = CACMAR*(1-CAC_selection1)
+NewGPACAC = 1-NewCACMAR
+NewIncrementalGain = 340000 - (Rev * NewGPACAC)
+NewROI = NewIncrementalGain/InversionCost
+
+col1, col2, col3 = st.columns(3)
+
 with col1:
-    st.markdown(f"<h2 style='text-align: left; color: black;'>{CALCULATION}</h2>", unsafe_allow_html=True)
-    st.subheader("_CAC formula = Total Costs to Aqcuire Customers / Number of Customers_")
-    st.subheader("_CAC Margin formula = Total Costs to Aqcuire Customers / Revenue_")
-    st.subheader("_Gross Profit After CAC Margin = 1 - CAC Margin_")
- 
+    st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
 with col2:
-    st.image("MockCAC.png")
+    st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
+with col3:
+    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain)
                             
 st.write("---")                               
 
@@ -138,11 +170,11 @@ st.write("Gross Profit after CAC Margin", round(GPACAC*100,2), "%")
         
 st.title("Return on Inversion")
 st.subheader("Adjust CAC Margin here")
-CAC_selection = st.slider("",min_value= -0.5,
+CAC_selection2 = st.slider("",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
-st.write("Chosen CAC MARGIN Change:", CAC_selection*10, "%")
+st.write("Chosen CAC MARGIN Change:", CAC_selection2*10, "%")
 
-NewCACMAR = CACMAR*(1-CAC_selection)
+NewCACMAR = CACMAR*(1-CAC_selection2)
 NewGPACAC = 1-NewCACMAR
 NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
