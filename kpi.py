@@ -96,7 +96,7 @@ with col2:
     st.image("MockCAC.png")
 
 ##### New Layout
-st.subheader("Adjust CAC Margin here")
+st.subheader("Adjust CAC Margin Here: ")
 CAC_selection1 = st.slider("",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
 st.write("Chosen CAC MARGIN Change:", CAC_selection1*10, "%")
@@ -152,25 +152,29 @@ st.header("Lets put these ratios into action!")
 st.subheader("Below is the output of our different ratios before manipulating the CAC Margin thanks to Inversions processes")
 
 
-st.write("Customer Aquisition Cost: R", round(CAC, 2))
-st.write("Customer Aquisition Cost MARGIN", round(CACMAR*100,2), "%")
-st.write("Gross Profit after CAC Margin", round(GPACAC*100,2), "%")
+#st.write("Customer Aquisition Cost: R", round(CAC, 2))
+#st.write("Customer Aquisition Cost MARGIN", round(CACMAR*100,2), "%")
+#st.write("Gross Profit after CAC Margin", round(GPACAC*100,2), "%")
 #st.write("Initial Return on Inversion", ROI, )
     
         
 st.title("Return on Inversion")
-st.subheader("Adjust CAC Margin here")
-CAC_selection2 = st.slider("Test",min_value= -0.5,
+st.subheader("Adjust CAC Margin Here: ")
+CAC_selection2 = st.slider("Slide for some magic!",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
 st.write("Chosen CAC MARGIN Change:", CAC_selection2*10, "%")
 
+col14, col15 = st.columns(2)
 
+with col114:
+    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain))
+with col15:
+    st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
 
-st.write("Customer Aquisition Cost: R", round(CAC,2))
-st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
-st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
-st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
-    
+#st.write("Customer Aquisition Cost: R", round(CAC,2))
+#st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
+#st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
+
 st.write("---") 
 
 
