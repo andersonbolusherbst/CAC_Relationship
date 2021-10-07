@@ -116,16 +116,16 @@ NewGPACAC = 1-NewCACMAR
 NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
 
-col1, col2, col3 = st.columns(3)
+col11, col12, col13 = st.columns(3)
 
-with col1:
+with col11:
     st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
-with col2:
+with col12:
     st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
-with col3:
+with col13:
     st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain)
 
-#st.write("---")                               
+st.write("---")                               
 
 HOW = "How can CAC be Decreased?"
 st.markdown(f"<h1 style='text-align: center; color: black;'>{HOW}</h1>", unsafe_allow_html=True)
