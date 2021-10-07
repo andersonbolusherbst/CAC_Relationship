@@ -125,7 +125,7 @@ with col2:
 with col3:
     st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain)
 
-st.write("---")                               
+#st.write("---")                               
 
 HOW = "How can CAC be Decreased?"
 st.markdown(f"<h1 style='text-align: center; color: black;'>{HOW}</h1>", unsafe_allow_html=True)
