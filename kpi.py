@@ -187,7 +187,7 @@ NewROI = NewIncrementalGain/InversionCost
 col14, col15 = st.columns(2)
 
 with col14:
-    st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain))
+    st.write("Incremental Gain following change in CAC %", round(NewIncrementalGain))
 with col15:
     st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
 
