@@ -124,7 +124,7 @@ with col2:
     st.write("NEW Gross Profit after CAC Margin Change", round(NewGPACAC*100,2), "%")
 with col3:
     st.write("Incremental Gain following Decrease in CAC %", round(NewIncrementalGain)
-                            
+
 st.write("---")                               
 
 HOW = "How can CAC be Decreased?"
