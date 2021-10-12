@@ -184,12 +184,14 @@ NewGPACAC = 1-NewCACMAR
 NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
 
-col14, col15 = st.columns(2)
+col14, col15, col6 = st.columns(2)
 
 with col14:
     st.write("Incremental Gain following change in CAC %", round(NewIncrementalGain))
 with col15:
     st.write("Return on Inversion after CAC Change", round(NewROI*100,2), "%")
+with col6:
+    st.subheader("Return on Inversion Formula = Incremental Gain / Inversion Agency Fee")
 
 #st.write("Customer Aquisition Cost: R", round(CAC,2))
 #st.write("NEW Customer Aquisition Cost MARGIN", round(NewCACMAR*100,2), "%")
