@@ -160,6 +160,7 @@ st.subheader("Below is the output of our different ratios before manipulating th
         
 st.title("Return on Inversion")
 st.subheader("Adjust CAC Margin Here: ")
+st.write("_Starting values based on the CAC margin calculations above_")
 
 CAC_selection2 = st.slider("Slide for some magic!",min_value= -0.5,
                           max_value= 0.5, value = 0.0, step = 0.1)
