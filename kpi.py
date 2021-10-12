@@ -184,7 +184,7 @@ NewGPACAC = 1-NewCACMAR
 NewIncrementalGain = 340000 - (Rev * NewGPACAC)
 NewROI = NewIncrementalGain/InversionCost
 
-col14, col15, col6 = st.columns(2)
+col14, col15, col6 = st.columns(3)
 
 with col14:
     st.write("Incremental Gain following change in CAC %", round(NewIncrementalGain))
